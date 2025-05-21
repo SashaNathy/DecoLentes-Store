@@ -14,44 +14,61 @@
   <body>
     <div class="layout">
       <header class="header">
-        <div class="header-container">
-          <div class="container_logo">
-            <div class="logo">
-              <img src="./assets/imgs/logo.png" alt="Logo Deco Lentes" />
-            </div>
-            <div class="logo_tittle">
-              <p>Deco Lentes</p>
-            </div>
-          </div>
-
-          <div class="hmb">
-            <a href="#menu" class="hamburger">
-              <span class="material-symbols-outlined">menu</span>
-            </a>
-          </div>
+        <p>Ordenar Por:</p>
+        <div class="search between">
+          <label for="price">Precio</label>
+          <select name="Precio" id="price">
+            <option value="Price"></option>
+            <option value="Price">Car City $ 1.500</option>
+            <option value="Price">Car City $ 2.000</option>
+            <option value="Price">Car City $ 2.500</option>
+            <option value="Price">Car City $ 2.800</option>
+            <option value="Price">Car City $ 2.999</option>
+            <option value="Price">Car City $ 3.500</option>
+            <option value="Price">Car City $ 3.700</option>
+            <option value="Price">Car City $ 6.000</option>
+          </select>
         </div>
-
-        <!-- Menú desplegable -->
-        <nav class="nav_links" id="menu">
-          <a href="#" class="nav_link">Inicio</a>
-          <a href="#" class="nav_link">Catálogo</a>
-          <a href="#" class="nav_link">Ofertas</a>
-          <a href="#" class="nav_link">Contacto</a>
-          <a class="close-btn" href="#">✕</a>
-        </nav>
       </header>
-
       <aside class="sidebar">
-        <div class="categories">
-          <div>Lentes Opticos</div>
-          <div>Lentes de Sol</div>
-          <div>Accesorios</div>
-          <div>Tiendas</div>
+        <div class="logo">
+          <div class="container_logo">
+            <img
+              class="nav_img"
+              src="./assets/imgs/logo.png"
+              alt="Logo Deco Lentes"
+            />
+          </div>
+          <div class="logo_tittle">
+            <p>Deco Lentes</p>
+          </div>
         </div>
+
+        <!-- Navegación principal colocada debajo -->
+        <div class="navegador">
+          <ul>
+            <li>Inicio</li>
+            <li>Catalogo</li>
+            <li>Ofertas</li>
+            <li>Contactos</li>
+          </ul>
+        </div>
+        <nav class="menu">
+          <a href="#menu" class="nav_target">
+            <span class="material-symbols-outlined"> menu </span>
+          </a>
+          <div class="nav_links navegador" id="menu">
+            <a href="#inicio" class="nav_link">Inicio</a>
+            <a href="#lentesopticos" class="nav_link">Lentes Opticos</a>
+            <a href="#lentessol" class="nav_link">Lentes de Sol</a>
+            <a href="#tiendas" class="nav_link">Tiendas</a>
+            <a href="#" class="close-btn">✕</a>
+          </div>
+        </nav>
       </aside>
 
       <main class="main">
-        <div class="photo-home">
+        <div class="photo-home" id="inicio">
           <div class="photos">
             <img src="./assets/imgs/photohome1.jpg" alt="foto hombre" />
             <div class="home-text">
@@ -65,7 +82,7 @@
         </div>
 
         <!-- LENTES ÓPTICOS -->
-        <div class="text-separation">
+        <div class="text-separation" id="lentesopticos">
           <h1>Lentes Opticos</h1>
         </div>
 
@@ -110,7 +127,7 @@
         </div>
 
         <!-- LENTES DE SOL -->
-        <div class="section-sun">
+        <div class="section-sun" id="lentessol">
           <div class="text-separation-sun">
             <h1>Lentes Sol</h1>
           </div>
@@ -165,23 +182,39 @@
         </div>
 
         <!-- TIENDAS -->
-        <div class="store-text">
+        <div class="store-text" id="tiendas">
           <p>Encuentra nuestras tiendas</p>
         </div>
 
         <div class="stores">
           <div class="slider">
             <div class="slide-track">
-              <div class="slide"><img src="./assets/imgs/tienda1.jpg" alt="" /></div>
-              <div class="slide"><img src="./assets/imgs/tienda2.jpg" alt="" /></div>
-              <div class="slide"><img src="./assets/imgs/tienda3.jpg" alt="" /></div>
-              <div class="slide"><img src="./assets/imgs/tienda4.jpg" alt="" /></div>
+              <div class="slide">
+                <img src="./assets/imgs/tienda1.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./assets/imgs/tienda2.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./assets/imgs/tienda3.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./assets/imgs/tienda4.jpg" alt="" />
+              </div>
 
               <!-- Duplicadas para bucle -->
-              <div class="slide"><img src="./assets/imgs/tienda1.jpg" alt="" /></div>
-              <div class="slide"><img src="./assets/imgs/tienda2.jpg" alt="" /></div>
-              <div class="slide"><img src="./assets/imgs/tienda3.jpg" alt="" /></div>
-              <div class="slide"><img src="./assets/imgs/tienda4.jpg" alt="" /></div>
+              <div class="slide">
+                <img src="./assets/imgs/tienda1.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./assets/imgs/tienda2.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./assets/imgs/tienda3.jpg" alt="" />
+              </div>
+              <div class="slide" id="contacto">
+                <img src="./assets/imgs/tienda4.jpg" alt="" />
+              </div>
             </div>
           </div>
         </div>
@@ -189,14 +222,22 @@
 
       <footer class="footer">
         <div class="btn-social">
-          <a href="https://www.instagram.com/tu_usuario" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.instagram.com/tu_usuario"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i class="fa-brands fa-instagram"></i>
           </a>
-          <a href="https://www.facebook.com/tu_usuario" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.facebook.com/tu_usuario"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i class="fa-brands fa-facebook"></i>
           </a>
         </div>
-      
+
         <div class="footer_tittle">
           <p>Todos los derechos reservados</p>
         </div>
