@@ -617,4 +617,16 @@
     margin: 0 auto;
     overflow: hidden; 
   }
+
+  .stores {
+    max-width: 800px;
+    max-height: 500px;
+
+  }
+
+  .slide img {
+    height: 600px;
+    width: 600px;
+    object-fit: cover;
+}
 }
