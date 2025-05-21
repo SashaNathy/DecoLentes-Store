@@ -68,6 +68,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 25px;
+  }
+
+  .logo_tittle {
+    font-size: larger;
   }
   
   .material-symbols-outlined {
@@ -108,7 +113,7 @@
     bottom: 0;
     top: 60px;
     right: 0;
-    background-color: #424949;
+    background-color: #aa9539;
     display: grid;
     place-items: center;
     clip-path: circle(0% at top right);
@@ -181,7 +186,7 @@
   
   .text-separation {
     font-style: italic;
-    color: rgb(145, 155, 8);
+    color: rgb(78, 83, 2);
 
   }
   
@@ -249,13 +254,13 @@
   
   .card-sun {
     width: 100%;
+    max-width: 300px;
     display: flex;
     flex-direction: column;
-    border: 3px solid rgb(170, 98, 31);
+    background-color: rgb(170, 98, 31);
     border-radius: 8px;
     overflow: hidden;
-    background-color: rgb(170, 98, 31);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
@@ -433,20 +438,13 @@
     
      .logo {
       display: flex;
-      flex-direction: row; 
-      align-items: center;
       justify-content: start;
       gap: 10px;
-      width: 100%;
+      width: 150%;
     }
     
     .container_logo {
       width: auto;
-    }
-    
-    .logo_tittle {
-      font-size: 1.2rem;
-      font-weight: bold;
     }
     
     .navegador {
@@ -606,7 +604,17 @@
     display: flex;
     justify-content: center;
     font-style: italic;
-    color: rgb(145, 155, 8);
+    color: rgb(102, 109, 12);
     font-size: 1.5rem; 
 }
+
+.container , .cards-container-sun {
+    display: grid;
+ grid-template-columns: repeat(3, 2fr);    
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden; 
+  }
 }
