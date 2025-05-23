@@ -28,7 +28,7 @@
   
   .header {
     grid-area: header;
-    padding: 10px;
+    padding: 20px;
   }
   
   header p {
@@ -38,13 +38,13 @@
   }
   
   .search {
-    padding-bottom: 1px;
+    padding-bottom: 2px;
     background: #fff;
     border-radius: 3px;
   }
   
   .search label {
-    padding-left: 1.5em;
+    padding-left: 1em;
     font-size: small;
     color: #42494981;
   }
@@ -175,7 +175,7 @@
   
   .home-text {
     position: absolute;
-    top: 70%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(233, 220, 108);
@@ -361,18 +361,18 @@
   
   .footer {
     position: fixed;  
-   bottom: 0;         
-   left: 0;           
-   width: 100%;      
-   height: 60px;     
-   background-color:  rgb(170, 98, 31);
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   gap: 20px;
-   z-index: 10;
-   border: none;  
-   outline: none; 
+    bottom: 0;         
+    left: 0;           
+    width: 100%;      
+    height: 60px;     
+    background-color:  rgb(170, 98, 31);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    z-index: 10;
+    border: none;  
+    outline: none; 
  }
  
  .btn-social {
@@ -397,22 +397,15 @@
     .layout {
         display: grid;
         grid-template-areas:
-          "sidebar header"
-          "sidebar main"
-          "footer main";
+        "sidebar header"
+        "sidebar main"
+        "footer main";
         grid-template-columns: 1fr 11fr;
         grid-template-rows: auto 1fr auto;
-      }
-    
-     .search {
-      width: 100%;
-      max-width: 1000px; 
-      margin-left: 70px;
-      box-sizing: border-box;
     }
     
       .sidebar {
-         display: flex;
+      display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: start;
@@ -429,7 +422,7 @@
     
       .container {
         display: grid;
-     grid-template-columns: repeat(2, 1fr);    
+        grid-template-columns: repeat(2, 1fr);    
         gap: 20px;
         width: 100%;
         max-width: 1200px;
@@ -444,7 +437,7 @@
      .logo {
       display: flex;
       justify-content: start;
-      gap: 10px;
+      gap: 5px;
       width: 150%;
     }
     
@@ -461,15 +454,15 @@
     }
     
     .navegador ul {
-         display: flex;
-      flex-direction: column; 
-      gap: 10px;               
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      align-items: center;     
-      width: 100%; 
-    } 
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    gap: 90px;               
+    list-style: none;
+    margin-top: 20px;
+    align-items: center;
+} 
     
 
   .container , .cards-container-sun {
@@ -504,26 +497,20 @@
    .search {
      width: 100%;
      max-width: 1000px; 
-     margin-left: 70px;
-     box-sizing: border-box;
+     margin-left: 20px;
    }
    
      .sidebar {
-       width: 200px;
-        display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: start;
-     background-color: #a8a772;
-     padding: 10px;
+    width: 200px;   
+    padding: 10px;
      }
 
-     .main {
-        padding: 20px;
-        height: auto;
-        width: 100%; 
-         padding-bottom: 100px;
-      }
+    .main {
+    padding: 20px;
+    height: auto;
+    width: 100%; 
+    padding-bottom: 100px;
+    }
     
       .container {
         display: grid;
@@ -559,24 +546,17 @@
       margin-bottom: 30px;
     }
     
-    .navegador {
-      width: 100%;
-      margin-top: 1rem;
-      overflow-x: hidden;
-      min-height: 150px; 
-      display: block;
-    }
-    
     .navegador ul {
-         display: flex;
-      flex-direction: column; 
-      gap: 40px;               
+    width: 100%; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;   
+      gap: 90px;               
       list-style: none;
       padding: 0;
       margin: 0;
-      align-items: center;     
-      width: 100%; 
-    }     
+      margin-top: 30px;
+    } 
     
    
   .photo-home {
@@ -609,7 +589,6 @@
     display: flex;
     justify-content: center;
     font-style: italic;
-    color: rgb(102, 109, 12);
     font-size: 1.5rem; 
 }
 
