@@ -16,17 +16,17 @@ Todas las secciones se adaptan perfectamente a distintos tamaños de pantalla (m
 
 Se emplean breakpoints bien definidos para mantener la estructura clara y usable.
 
-🖼️ 3. Galería de Imágenes Interactiva
-Galería principal con imágenes estilizadas.
+🖼️ 3. Galería de Imágenes Interactiva en forma de cartas
 
-Al pasar el cursor, las imágenes cambian de blanco y negro a color mediante transiciones CSS.
+
+Al pasar el cursor, las imágenes cambian el tamaño mediante transiciones CSS.
 
 El diseño incluye transformaciones suaves para un efecto visual atractivo y profesional.
 
 📬 4. Footer Informativo y Responsivo
 Contiene información de contacto y enlaces a redes sociales.
 
-Diseñado con Flexbox o Grid, adaptándose a cualquier resolución.
+Diseñado con Flexbox, adaptándose a cualquier resolución.
 
 Mantiene coherencia visual con el resto del sitio.
 
@@ -40,7 +40,7 @@ Interfaz amigable y moderna.
 🛠️ Tecnologías Utilizadas
 HTML5 – Estructura semántica del sitio.
 
-CSS3 – Estilos, transiciones, transformaciones, y diseño responsivo.
+CSS3 – Estilos, transiciones, transformaciones, animaciones y diseño responsivo.
 
 Flexbox y CSS Grid – Para organizar contenido de forma eficiente.
 
